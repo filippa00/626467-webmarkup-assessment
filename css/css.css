@@ -4,6 +4,7 @@
 	box-sizing: border-box;	
 	
 }
+/* nav for pc*/
 #logo{
 	
 	width:10%;	
@@ -35,7 +36,7 @@
 	text-decoration:none;
 	font-size:1.6rem;
 	float:right;
-	
+
 }
 .nav-link{
 	
@@ -66,24 +67,16 @@ label{
 #toggle{
 	display:none;
 }
+/* index.html for pc*/
 .video{
 	height:;
 	width:50%;
 	
 }
-#smartsolar{
+#smartsolar,#multiplus,#easysolar{
 	max-width:300px;
-	float:right;
 }
-#multiplus{
-	max-width:300px;
-	float:right;
-}
-#easysolar{
-	max-width:300px;
-	float:right;
-	
-}
+
 
 
 .aside{
@@ -130,9 +123,10 @@ label{
 #cookie{
 	
 	position:fixed;
-	color: #FFF;
-	
+	color: #FFF;	
 }
+
+/* howsolarworks.html for pc*/
 #section2{
 	margin-top:8%;
 	background-color:#eee;
@@ -177,7 +171,61 @@ label{
 #aside{
 	
 }
-@media only screen and (max-width: 500px){
+/* eusolar.html for pc*/
+td{
+	margin:20px;
+	padding:5px;
+	font-size:16px;
+	text-align:center;
+	
+}
+.firstrow:first-child{
+	background:#FF0;
+	text-align:left;
+}
+td.firstrow:first-letter{
+	font-size:150%;
+	
+}
+
+tr:nth-child(even){
+	background:#CCF;
+}
+tr:nth-child(odd){
+	background:#FFF;
+}
+#pic1,#pic2,#pic3{
+	max-width:300px;
+}
+.aside2{
+	float:right;
+}
+table{
+	width: 1000px;
+	margin-right:50px;
+}
+#text4{
+	
+	margin-top:70px;
+	margin-bottom:20px;
+	width:50%;
+	position:center;
+	font-size:16px;
+}
+#tabletitle{
+	margin-bottom:10px;
+	position:center;
+	font-size:20px;
+}
+.aside3{
+	float:right;
+}
+
+/* media query for Tablet*/
+@media only screen and (){}
+
+/* media query for mobile*/
+@media only screen and (max-width: 480px){
 	label{
 		display:block;
 		cursor:pointer;
@@ -205,6 +253,8 @@ label{
 		display:block;
 	}
 }
+
+
 
 
 

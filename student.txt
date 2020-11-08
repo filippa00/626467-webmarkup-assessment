@@ -1,0 +1,4 @@
+Student name: Filippa Kwapong
+Student number: 626467
+Student class: IT1C
+URL student GitHub repository: https://github.com/filippa00/626467-webmarkup-assessment 

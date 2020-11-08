@@ -13,10 +13,10 @@
 	
 	</head>
 	
-	<body>
+	<body class= "main">
 		<header>
 			
-			<img src="images/logo.svg" class= "head-1"id= "logo" alt="image of logo" >
+			<img src="images/logo.svg" class= "head-1" alt="image of logo" >
 			<h1 class= "head-2"> I want solar energy </h1>
 			<h2 class= "head-3"> Love our planet </h2>
 			<nav class= "nav">
@@ -36,58 +36,67 @@
 		<form action="http:// i-want-solar-energy.com/testform.php"
 			method="post"
 			>			
-			<legend>Contact us:</legend>
 			
-			<fieldset>
-			
-				<label for ="name">Full name</label>
-				<input type= "text" name="name" id= "name" placeholder="Full name">
+			<p id= "contactintro">Welcome to the contact page. Fill out the form and contact us regarding solar panels, what we do or any other questions. </p>
+			<fieldset class= "fieldset">
+				<legend id= "legend">Contact us:</legend>
+				<section class="form">
+					<label for ="name" class="lbl"> Full name </label>
+					<input type= "text" name="name" class= "contact" placeholder="Full name">
+				</section>
 				
-				<label for ="email">Email</label>
-				<input type= "email" name="email"  placeholder="email@gmail.nl">
+				<section class="form">
+					<label for ="email"class="lbl"> Email </label>
+					<input type= "email" name="email" class= "contact" placeholder="email@gmail.nl">
+				</section >
 				
-				<label for ="message">Message</label>
-				<textarea name="message" id="" placeholder="Write your question here" cols="20" rows="10"></textarea>
+				<section >
+					<label for ="message" class="lbl">Message</label>
+					<textarea name="message" class= "contact" placeholder="Write your question here" cols="20" rows="10"></textarea>
+				</section>
 				
-				<button type= "submit">submit</button>
+				<section>
+					<button type= "submit">submit</button>
+				<section/>						
 			
 			</fieldset>
 			<Aside class= "aside3">
-				<figure>
-					<h4>The Fast Smart Solar MPPT charge controller</h4>
-					<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">
-					<img src="images/smartsolar.png" id= "smartsolar" alt="image of Victron energy's smart solar">
-					</a>
-						<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">Buy Now
-					</a>
-				</figure>
-				
-				<figure>
-					<h4> The Multifunctional Multiplus</h4>
-					<a href="http://www.ikwilzonneenergie.nl/Victron-Energy-Multiplus-12V/3000W/120-16"target="_blank">
-					<img src="images/multiplus.png" id= "multiplus" alt="image of Victron energy's multiplus">
-					</a>
-						<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">Buy Now
-					</a>
-				</figure>
-				
-				<figure>
-					<h4>All in one Victron EasySolar</h4>
-					<a href=" http://www.ikwilzonneenergie.nl/Victron-EasySolar-24V-3000W-70A-50-MPPT-ColorControl"target="_blank">
-					<img src="images/easysolar.png" id= "easysolar" alt="image of Victron energy's easysolar">
-					</a>
-						<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">Buy Now
-					</a>
-				</figure>
-			</Aside>		
+					<figure>
+						<h4>The Fast Smart Solar MPPT charge controller</h4>
+						<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">
+						<img src="images/smartsolar.png" class= "smartsolar" alt="image of Victron energy's smart solar">
+						</a>
+							<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">Buy Now
+						</a>
+					</figure>
+					
+					<figure>
+						<h4> The Multifunctional Multiplus</h4>
+						<a href="http://www.ikwilzonneenergie.nl/Victron-Energy-Multiplus-12V/3000W/120-16"target="_blank">
+						<img src="images/multiplus.png" class= "multiplus" alt="image of Victron energy's multiplus">
+						</a>
+							<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">Buy Now
+						</a>
+					</figure>
+					
+					<figure>
+						<h4>All in one Victron EasySolar</h4>
+						<a href=" http://www.ikwilzonneenergie.nl/Victron-EasySolar-24V-3000W-70A-50-MPPT-ColorControl"target="_blank">
+						<img src="images/easysolar.png" class= "easysolar" alt="image of Victron energy's easysolar">
+						</a>
+							<a href="http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V" target="_blank">Buy Now
+						</a>
+					</figure>
+				</Aside>
+			
 		</form>
 		
 		
 	</body>
 	<Footer>
-		<p>&copy;2020 Filippa Kwapong </p>
+		<p class="copyrightinfo">&copy;2020 Filippa Kwapong </p>
 		
-		<section>
+		<section class= "cookie">
 			Cookie statement
 		
 		

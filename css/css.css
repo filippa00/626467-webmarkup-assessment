@@ -2,20 +2,17 @@
 	margin:0px;
 	padding:0px;
 	box-sizing: border-box;	
-	
+	font-family: Arial, Helvetica, sans-serif;
 }
 /* nav for pc*/
-#logo{
-	
-	width:10%;	
-	 
-}
-.container-1{	
+@import url(https://fonts.google.com/specimen/Notable?query=notabl);
+.flexbox{	
 	Display:flex;
 	flex-wrap:wrap;
 	flex-direction:column;
-	background:green;
+	
 	align-items:center;
+	background-color:#6ca673;
 	
 }
 .head-1{
@@ -23,19 +20,23 @@
 	align-self:flex-start;
 	justify-content:flex-start;
 	float:left;
+	width:10%;
 }
 .head-2{
-	margin-left:50px	
+	
+ font-family:Notable;	
 }
 .head-3{
-	margin-left:70px
-
+	
+	font-family:Notable;
 }
 .nav{	
 	
 	text-decoration:none;
 	font-size:1.6rem;
 	float:right;
+	color:#fff;
+	font-family:Notable;
 
 }
 .nav-link{
@@ -43,6 +44,7 @@
 	
 	list-style:none;
 	float:left;
+	background:#00442b;
 }
 
 
@@ -55,7 +57,7 @@ li a{
 	
 }
 li a:hover{
-	background-color:#111
+	background-color:#6ca673
 }
 label{
 	
@@ -63,74 +65,70 @@ label{
 	margin:0 40px;	
 	line-height:70px;
 	display:none;
+	
 }
 #toggle{
 	display:none;
 }
 /* index.html for pc*/
+header{
+	background:#00442b;
+	width:100%;
+	color:#fff
+}
+	
+
 .video{
 	height:;
 	width:50%;
 	
 }
-#smartsolar,#multiplus,#easysolar{
-	max-width:300px;
+.smartsolar,.multiplus,.easysolar{
+	max-width:200px;
+	float:right;
+	left:100px;
+}
+.img1{
+	float:right;
+	
 }
 
 
-
 .aside{
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction:column;
-	position:absolute;
-	right:30px;
-	float:right
+	position:fixed;
+	right:0;
+	background-color:#00442b80;
+	margin-top:10px;
+	padding-left:20px;
+	font-family:
+	
 }
 .section{
 	display:flex;
 	flex-wrap:wrap;
-	flex-direction:row;
-}
-.article{
-	Display:flex;
-	flex-wrap:wrap;
 	flex-direction:column;
-	max-width:300px;
 	
-}
-.article1{
-	flex-basis:100%;
-	flex-grow:1;
-	flex-shrink:0;
-	flex-grow:1;
-}
-.article2{
-	flex-basis:100%;
-	flex-grow:1;
-	flex-shrink:0;
-	flex-grow:1;
-}
-.article3{
-	flex-basis:100%;
-	flex-grow:1;
-	flex-shrink:0;
-	flex-grow:1;
-}
-.text1{
 	float:left;
 }
-#cookie{
+
+.article1,.article2,.article3{
 	
-	position:fixed;
-	color: #FFF;	
+	float:left
+	
 }
+
+.text1,.text2,.text3{
+	width:500px;
+	margin-top:10px;
+	
+}
+
 
 /* howsolarworks.html for pc*/
 #section2{
 	margin-top:8%;
-	background-color:#eee;
-	border:solid 10px #F0F;
+	background-color:#6ca673;
+	
 	padding:10px;
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr;
@@ -138,11 +136,14 @@ label{
 	justify-content: space-evenly;
 }
 #section2 >article{
-	background-color:#EEE;
-	border:solid 10px #666;
-	text-align:center;
+
+	
+	text-align:left;
 	padding:20px 0;
 	font-size:16px;	
+}
+#howsolarworks{
+	background-color:#6ca673;
 }
 #par1{
 	grid-column: 2/3;
@@ -168,9 +169,7 @@ label{
 	grid-column: 2/4;
 	grid-row:3;
 }
-#aside{
-	
-}
+
 /* eusolar.html for pc*/
 td{
 	margin:20px;
@@ -217,12 +216,110 @@ table{
 	position:center;
 	font-size:20px;
 }
+.main{
+	background-color:#6ca673;
+}
+/*contact page*/
+#contactintro{
+	margin-top:70px;
+	margin-bottom:20px;
+	width:50%;
+	position:center;
+	font-size:16px;	
+}
+.fieldset{
+	width:500px;
+	
+	height:350px;
+	float:left;
+}
 .aside3{
 	float:right;
+	
+
+}
+.cookie{
+	
+	position:fixed;
+	bottom:0;
+	right:0;
+	color: #FFF;
+	background-color:black;
+	padding:3px;
+}
+.copyrightinfo{
+	
+	bottom:0;
+	left:0;
+}
+
+.contact{
+	width: 300px;
+	margin-bottom:20px;
+}
+.lblname{
+	margin-bottom:10px;
+	position:center;
+	font-size:20px;
+}
+#legend{
+	font-size:20px;	
 }
 
 /* media query for Tablet*/
-@media only screen and (){}
+@media only screen and (max-width: 1179px) and (min-width: 481px)
+{
+	.aside{
+		top:300px;
+	}
+	.section{
+		margin-top:150px;
+		font-size:12px;
+	}
+	#section2{
+		Display:grid;
+		grid-template-columns:unset;
+		grid-template-columns:1fr 1fr;
+		
+	}
+	#par1{
+	grid-column: 1/2;
+	grid-row:1/2;
+	}
+	#par2{
+		grid-column: 2/3;
+		grid-row:1/2;
+	}
+	#par3{
+		grid-column: 1/2;
+		grid-row:2/3;
+	}
+	#par4{
+		Display:none;
+	}
+	#par5{
+		grid-column:2/3;
+		grid-row:2/3;
+		
+	}#par6{
+		grid-column: 1/3;
+		grid-row:3/4;
+	}
+	#section2 >article{
+	text-align:left;
+	padding:20px 0;
+	font-size:12px;	
+	}
+	td:nth-child(3),th:nth-child(3),td:nth-child(2),th:nth-child(2){
+		visibility:hidden;
+		
+	}
+	td{
+		
+		left:0;
+		max-width:700px;
+	}
+}
 
 /* media query for mobile*/
 @media only screen and (max-width: 480px){
@@ -235,7 +332,7 @@ table{
 		
 		text-align: center;
 		width: 100%;
-		background:blue;
+		background:#00442b;
 		display:none;
 	}
 	
@@ -252,7 +349,60 @@ table{
 	#toggle:checked ~li a {
 		display:block;
 	}
+	
+	.aside{
+		top:150px;
+	}
+	.section{
+		margin-top:150px;
+		font-size:12px;
+	}
+	.video{
+		display:none;
+	}
+	#section2{
+		Display:grid;
+		grid-template-columns:unset;
+		grid-template-columns:1fr 1fr;
+		
+	}
+	#par1{
+	grid-column: 1/2;
+	grid-row:1/2;
+	
 }
+	#par2{
+		grid-column: 2/3;
+		grid-row:1/2;
+		font-size:12px;
+	}
+	#par3{
+		grid-column: 1/2;
+		grid-row:2/3;
+	}
+	#par4{
+		Display:none;
+	}
+	#par5{
+		grid-column:2/3;
+		grid-row:2/3;
+		
+	}#par6{
+		grid-column: 1/3;
+		grid-row:3/4;
+	}
+	#section2 >article{
+
+	margin-left:50px;
+	text-align:left;
+	padding:20px 0;
+	font-size:12px;	
+	}
+	td:nth-child(3),th:nth-child(3),td:nth-child(2),
+	th:nth-child(2),td:nth-child(4),th:nth-child(4),td:nth-child(5),th:nth-child(5){
+		visibility:hidden;
+}
+
 
 
 
